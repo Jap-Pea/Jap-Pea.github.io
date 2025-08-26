@@ -1,0 +1,248 @@
+/* ===========================
+   THEME / TOKENS
+   =========================== */
+:root {
+  --bg: #0b0d12; /* page background */
+  --paper: #0f1219; /* card/paper background (used in gradients) */
+  --ink: #e9edf6; /* main text color */
+  --muted: #9aa3b2; /* secondary text */
+  --accent: #e11d48; /* rose accent for emphasis */
+  --link: #7aa2ff; /* link color (blue) */
+  --ring: rgba(122, 162, 255, 0.35);
+  --rule: rgba(255, 255, 255, 0.08); /* borders/dividers */
+}
+
+/* Global resets */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* ===========================
+   PAGE BACKGROUND
+   - Uses a 3D concrete texture (repeat)
+   - You can swap for /assets/newsprint.jpg for newspaper look
+   =========================== */
+html,
+body {
+  background: url(/assets/concrete.png) repeat;
+  background-size: cover; /* try 'auto' if you want native tiling size */
+}
+
+/* ===========================
+   TYPOGRAPHY & BASE
+   =========================== */
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px 18px 60px;
+}
+
+/* ===========================
+   MASTHEAD
+   IDs: #hub-header, #site-title, #site-subtitle
+   =========================== */
+.masthead {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.name {
+  font: 1000 40px/1 Newsreader, Georgia, serif;
+  letter-spacing: 0.2px;
+  margin: 4px 0 8px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ===========================
+   NEWSLETTER CONTAINER
+   =========================== */
+.paper {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid var(--rule);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.rule {
+  height: 1px;
+  background: var(--rule);
+  margin: 18px 0;
+  border: 0;
+}
+
+/* ===========================
+   LEAD / HERO
+   ID: #lead
+   =========================== */
+.lead h2 {
+  font-size: 24px;
+  margin: 0 0 6px;
+}
+.lead p {
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ===========================
+   GRID LAYOUT
+   =========================== */
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  margin-top: 16px;
+}
+
+@media (min-width: 760px) {
+  .grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+/* ===========================
+   SECTIONS & ITEMS
+   IDs commonly used:
+   #features, #feature-dev-academy, #feature-indaigo,
+   #from-my-3yo, #sidebar, #quick-links, #now-learning,
+   #discord, #fix-my-issues
+   =========================== */
+.section h3 {
+  font-size: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.item {
+  padding: 14px;
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.item .title {
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.item .meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+.item p {
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+
+/* Images inside cards */
+.item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+/* If you want uniform thumbnails instead, comment the block above and use:
+.item img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+*/
+
+/* ===========================
+   CTA ROW / BUTTONS
+   =========================== */
+.link-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  background: rgba(122, 162, 255, 0.12);
+}
+
+.btn--accent {
+  background: rgba(225, 29, 72, 0.14);
+  border-color: rgba(225, 29, 72, 0.35);
+}
+
+/* Links */
+a {
+  color: var(--link);
+  text-underline-offset: 2px;
+}
+a:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* ===========================
+   FOOTER
+   IDs: #paper-footer, #site-footer
+   =========================== */
+footer {
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+  margin-top: 18px;
+}
+
+/* Utilities */
+.muted {
+  color: var(--muted);
+}
+.copy-badge {
+  cursor: pointer;
+  user-select: none;
+}
+.copy-badge:focus-visible {
+  outline: 3px solid var(--ring);
+}
+
+.copy-feedback {
+  font-size: 12px;
+  color: var(--muted);
+  align-self: center;
+}
+
+/* Optional: brief “copied” look */
+.copy-badge.copied {
+  filter: brightness(1.2);
+  border-color: rgba(122, 162, 255, 0.6);
+}

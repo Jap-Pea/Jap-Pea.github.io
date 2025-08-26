@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jap-Pea Hub</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Masthead -->
+      <header id="hub-header" class="masthead" aria-label="Masthead">
+        <div id="site-title" class="name">Jap-Pea's Hub</div>
+        <div id="site-subtitle" class="subtitle">
+          A weekly(ish) snapshot of my Dev Academy journey, IndaiGo builds, and
+          experiments.
+        </div>
+      </header>
+
+      <!-- Paper -->
+      <article class="paper" aria-label="Newsletter content">
+        <!-- Lead / Hero blurb -->
+        <section id="lead" class="lead">
+          <h2>Hub</h2>
+          <p>
+            Think of this as the front page of my ongoing story. I’ll keep it
+            updated with what I’m learning, coding, and creating. Stay tuned.
+          </p>
+        </section>
+
+        <hr class="rule" />
+
+        <div class="grid">
+          <!-- Left column: features -->
+          <div class="col">
+            <section id="features" class="section" aria-label="Featured items">
+              <h3>Features</h3>
+
+              <div id="feature-dev-academy" class="item">
+                <div class="title">Dev Academy Course</div>
+                <img
+                  src="/assets/devacademypage.png"
+                  alt="My Dev Academy page"
+                  loading="lazy"
+                />
+                <div class="meta">
+                  I’m taking the journey to become a full-stack developer.
+                </div>
+                <p>
+                  Have a look at what I’ve learned and am still learning so far:
+                  HTML, CSS, JavaScript, Git.
+                </p>
+                <div class="link-row">
+                  <a
+                    class="btn"
+                    href="https://jap-pea.github.io/dev-academy/"
+                    target="_blank"
+                    rel="noopener"
+                    title="Open Dev Academy section"
+                    >Open My Dev Blog Page</a
+                  >
+                  <a
+                    class="btn btn--accent"
+                    href="https://devacademy.co.nz/"
+                    target="_blank"
+                    rel="noopener"
+                    title="Dev Academy NZ website"
+                    >To Dev Academy NZ</a
+                  >
+                </div>
+              </div>
+
+              <div id="feature-indaigo" class="item" style="margin-top: 12px">
+                <div class="title">IndaiGo</div>
+                <img src="/assets/IndaiGo.png" alt="IndaiGo" loading="lazy" />
+                <div class="meta">My personal page I’m slowly building.</div>
+                <p>
+                  My goal is to get into game development. This is where I
+                  showcase my own projects.
+                </p>
+                <div class="link-row">
+                  <a
+                    class="btn"
+                    href="https://jap-pea.github.io/IndaiGo/"
+                    target="_blank"
+                    rel="noopener"
+                    title="Open IndaiGo projects"
+                    >Visit IndaiGo</a
+                  >
+                  <a
+                    class="btn"
+                    href="https://jap-pea.github.io/IndaiGo/web-games.html"
+                    target="_blank"
+                    rel="noopener"
+                    title="Play games"
+                    >Play my games</a
+                  >
+                </div>
+              </div>
+            </section>
+
+            <section
+              id="from-my-3yo"
+              class="section"
+              style="margin-top: 16px"
+              aria-label="From my 3 year old"
+            >
+              <h3>From my 3 Year Old</h3>
+              <div class="item">
+                <div class="title">Quote of the Week</div>
+                <p class="muted">“I got a lawnmower butt.”</p>
+              </div>
+            </section>
+          </div>
+
+          <!-- Right column: sidebar -->
+          <aside id="sidebar" class="col" aria-label="Sidebar">
+            <section id="quick-links" class="section">
+              <h3>Quick Links</h3>
+              <div class="item">
+                <a
+                  class="title"
+                  href="https://github.com/Jap-Pea"
+                  target="_blank"
+                  rel="noopener"
+                  >My Git</a
+                >
+                <div class="meta">GitHub Portfolio</div>
+              </div>
+              <div class="item" style="margin-top: 10px">
+                <a
+                  class="title"
+                  href="https://jap-pea.github.io/IndaiGo/"
+                  target="_blank"
+                  rel="noopener"
+                  >IndaiGo</a
+                >
+                <div class="meta">Projects & experiments</div>
+              </div>
+              <div class="item" style="margin-top: 10px">
+                <a
+                  class="title"
+                  href="https://jap-pea.github.io/IndaiGo/web-games.html"
+                  target="_blank"
+                  rel="noopener"
+                  >Web-Games</a
+                >
+                <div class="meta">Mini-Games</div>
+              </div>
+              <div class="item" style="margin-top: 10px">
+                <a
+                  class="title"
+                  href="https://jap-pea.github.io"
+                  target="_blank"
+                  rel="noopener"
+                  >My Dev Blog</a
+                >
+                <div class="meta">Reflections</div>
+              </div>
+            </section>
+
+            <section id="now-learning" class="section" style="margin-top: 16px">
+              <h3>Now Learning</h3>
+              <div class="item">
+                <div class="title">Learning Focus</div>
+                <p class="muted">
+                  Arrays vs Objects • Loops • DOM events • Neuroplasticity.
+                </p>
+              </div>
+            </section>
+
+            <section id="discord" class="section" style="margin-top: 16px">
+              <h3>Discord</h3>
+              <div class="item">
+                <p class="muted">Wanna chat? Add me on Discord:</p>
+
+                <div class="link-row">
+                  <!-- Click/press Enter to copy -->
+                  <span
+                    id="discord-handle"
+                    class="btn btn--accent copy-badge"
+                    data-handle="sihkkhunt"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Copy my Discord username"
+                    aria-describedby="copy-feedback"
+                  >
+                    @sihkkhunt
+                  </span>
+                  <span
+                    id="copy-feedback"
+                    class="copy-feedback"
+                    aria-live="polite"
+                    hidden
+                  >
+                    Copied!
+                  </span>
+                </div>
+
+                <p class="muted" style="margin-top: 6px; font-size: 12px">
+                  (Copy the username above, then paste into Discord → Add Friend
+                  or DM)
+                </p>
+              </div>
+            </section>
+
+            <!-- Fix My Issues -->
+            <section
+              id="fix-my-issues"
+              class="section"
+              style="margin-top: 16px"
+            >
+              <h3>Fix My Issues</h3>
+              <div class="item">
+                <p class="muted">
+                  Found a bug or something looks off? Let me know and I'll fix
+                  it.
+                </p>
+                <div class="link-row">
+                  <a
+                    class="btn"
+                    href="mailto:justinbp@hotmail.co.nz?subject=Site%20Issue%20Report&body=What%20went%20wrong%3F%20(please%20include%20link%20and%20what%20you%20expected)"
+                    title="Email me about an issue"
+                    >Report via Email</a
+                  >
+                  <a
+                    class="btn btn--accent"
+                    href="https://github.com/Jap-Pea/Jap-Pea.github.io/issues/new"
+                    target="_blank"
+                    rel="noopener"
+                    title="Open a GitHub issue"
+                    >Open GitHub Issue</a
+                  >
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
+
+        <hr class="rule" />
+
+        <!-- Footer row inside paper -->
+        <div
+          id="paper-footer"
+          style="
+            display: flex;
+            gap: 12px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+          "
+        >
+          <span class="muted"
+            >© <time id="year"></time> Jap-Pea — IndaiGo. All rights
+            reserved.</span
+          >
+        </div>
+      </article>
+
+      <footer id="site-footer">
+        <p>
+          © <time id="year-dup"></time> Jap-Pea — IndaiGo. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
